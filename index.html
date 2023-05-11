@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2113.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+    span.Apple-tab-span {white-space:pre}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="description" content="This is my awesome counter!"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta property="og:title" content="DRC Lost Revenue Counter"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta property="og:description" content="Calculates the amount of penalties the DRC has incurred since first violation of ICC court ruling "&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta property="og:image" content="https://raw.githubusercontent.com/Spikerama/drc-tax-loss-counter_english/main/green%20burning%20dollar%20sign.png"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta property="og:url" content="https://spikerama.github.io/drc-tax-loss-counter_english/"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta property="og:type" content="website"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;DRC Lost Revenue Counter&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>* {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-sizing: border-box;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: "Poppins", sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background-color: #121317;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.wrapper {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 80vw;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transform: translate(-50%, -50%);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>top: 50%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>left: 50%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: space-around;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: 100vh;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.container {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 74vmin;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: 36vmin;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: space-around;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 2em 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 0.5em;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background-color: #21242b;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-bottom: 10px solid #18f98f;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top: calc((100vh - 28vmin) / 2);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>i {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #18f98f;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 50em;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.counter {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 3.5em;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.counter-value {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.counter-value span:not(:last-child) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-right: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>span#first-line-text {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #18f98f;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: grid;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>place-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1.5em;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>span.text {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #e0e0e0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1em;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 0.3em 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 400;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1.5;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>@media screen and (max-width: 1024px) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.wrapper {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>width: 85vw;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.container {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>width: 50vw;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>font-size: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>@media screen and (max-width: 768px) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.wrapper {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>flex-wrap: wrap;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>gap: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>height: auto;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.container {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>height: auto;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>font-size: 14px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>i {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>font-size: 40em;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.counter {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>font-size: 2em;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="wrapper"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;i class="fas fa-dollar-sign"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span id="first-line-text"&gt;DRC PENALTIES FROM ICC VIOLATION<span class="Apple-converted-space">  </span>&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="counter"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="counter-value"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span&gt;$&lt;/span&gt;&lt;span id="count"&gt;0&lt;/span&gt;&lt;span&gt;+&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="text"&gt;Based on first violation of ICC’s Emergency Arbitrator’s Order, in relation to Dathcom JVA, 5 May 2023 . Penalty set at EUR $50K until resolved.</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-tab-span">	</span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>// set start date as May 11, 2023</p>
+<p class="p1"><span class="Apple-tab-span">	</span>const startDate = new Date("May 11, 2023 00:00:00");</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-tab-span">	</span>// set the amount to accrue per day in EUR</p>
+<p class="p1"><span class="Apple-tab-span">	</span>const amountPerDay = 50000;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-tab-span">	</span>function updateCounter() {</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-converted-space">  </span>// calculate the number of seconds elapsed since the start date</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-converted-space">  </span>const elapsedSeconds = Math.floor((new Date() - startDate) / 1000);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-converted-space">  </span>// calculate the total amount accrued</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-converted-space">  </span>const totalAmount = elapsedSeconds * amountPerDay / (60 * 60 * 24);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-converted-space">  </span>// update the counter value</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-converted-space">  </span>const countElement = document.getElementById("count");</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-converted-space">  </span>countElement.textContent = totalAmount.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2});</p>
+<p class="p1"><span class="Apple-tab-span">	</span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-tab-span">	</span>// update the counter every second</p>
+<p class="p1"><span class="Apple-tab-span">	</span>setInterval(updateCounter, 1000);</p>
+<p class="p1"><span class="Apple-tab-span">	</span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
